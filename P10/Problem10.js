@@ -1,16 +1,9 @@
 'use strict';
 
-function findMax(ar)
+function getDistinctElements(ar)
 {
-    let i;
-    let ma = ar[0];
-    for (i = 1; i < ar.length; i++) {
-        if (ar[i] > ma)
-            ma = ar[i];
-    }
-    return ma;
+    let sol=new Set(ar);
+    return sol;
 }
-
-var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-var max = findMax(ar);
-console.log(max);
+let output=getDistinctElements([1, 2, 3, 6, -1, 2, 9, 7, 10, -1, 100]);
+console.log(...output);
