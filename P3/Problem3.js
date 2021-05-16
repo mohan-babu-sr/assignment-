@@ -12,9 +12,9 @@ Ex: getPositives([1,-3,-5,10,20,-30,-40])
 */
 
 function getPositives(numbersArray) {
-    let pnumber=[];
-    array.filter(value=>value>0);
-    console.log(pnumber);
-}
-
-getPositives([1,-3,-5,10,20,-30,-40]);
+    let pos_nums;
+    pos_nums = numbersArray.filter(getPos => getPos > 0);
+    return pos_nums;
+ }
+let output=getPositives([1,-3,-5,10,20,-30,-40]);
+console.log(...output);
