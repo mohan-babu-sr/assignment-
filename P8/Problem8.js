@@ -13,5 +13,5 @@ function printFibonacci(n) {
     }
     
 }
-printFibonacci(4);
-printFibonacci(5);
+console.log(...printFibonacci(4));
+console.log(...printFibonacci(5));
